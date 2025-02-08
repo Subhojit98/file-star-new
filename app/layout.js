@@ -4,7 +4,7 @@ import "./globals.css";
 import { ReactLenis } from './utils/lenis/lenis'
 
 const globalFont = Rubik({
-  subsets: ['latin', 'cyrillic-ext', 'greek'],
+  subsets: ['latin', 'cyrillic', 'cyrillic-ext'],
   variants: ['400'],
 
 })
