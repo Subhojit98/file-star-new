@@ -2,6 +2,7 @@
 import { Geist, Geist_Mono, Rubik } from "next/font/google";
 import "./globals.css";
 import { ReactLenis } from './utils/lenis/lenis'
+import GlobalContext from "./context/GlobalContext";
 
 const globalFont = Rubik({
   subsets: ['latin', 'cyrillic', 'cyrillic-ext'],
@@ -22,7 +23,9 @@ export default function RootLayout({ children }) {
           className={`${globalFont.className}`}
 
         >
-          {children}
+         <GlobalContext>
+           {children}
+         </GlobalContext>
         </body>
       </ReactLenis>
 

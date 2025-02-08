@@ -2,6 +2,7 @@ import Hero from "./components/Hero"
 import HowItWorks from "./components/HowItWorks"
 import InputBox from "./components/InputBox"
 import Navbar from "./components/Navbar"
+import PlayGround from "./components/PlayGround"
 import Workflow from "./components/Workflow"
 
 const page = () => {
@@ -13,10 +14,10 @@ const page = () => {
       <Navbar />
       <Hero />
       {/* for extra scpace -> */}
-      <div className="w-full h-[50vh]"></div>
+      <div className="w-full h-[30vh]"></div>
       <HowItWorks />
       <Workflow />
-      <InputBox />
+      <PlayGround/>
     </div>
   )
 }

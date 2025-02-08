@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/components/Workflow.jsx", "app/components/InputBox.jsx"  ],
   "exclude": [
     "node_modules"
   ]
