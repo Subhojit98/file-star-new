@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +40,42 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.grid-box {
+  background-color: var(--background);
+  background-image:
+    linear-gradient(rgba(58, 4, 67, 0.8) 1px, transparent 1px),
+    linear-gradient(to right, rgba(58, 4, 67, 0.8) 1px, var(--background) 1px);
+  background-size: 9px 9px;
+  opacity: 0.8;
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 80%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 80%);
+
+}
+
+
+.grid-box-2 {
+  background-color: var(--background);
+  background-image:
+    linear-gradient(rgba(3, 5, 83, 0.8) 1px, transparent 1px),
+    linear-gradient(to right, rgba(3, 5, 83, 0.8) 1px, var(--background) 1px);
+  background-size: 9px 9px;
+  opacity: 0.8;
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 80%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 80%);
+
+}
+
+
+.hollow-text-1 {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(0, 247, 255);
+}
+
+.hollow-text-2 {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 38, 0);
+  text-shadow: 0 0 5px rgba(255, 95, 32, 0.897);
 }
